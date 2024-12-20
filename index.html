@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trezor Bridge - Securely store, manage, and protect your coins with Trezor hardware wallets, app & backup solutions.">
+  <meta name="keywords" content="Trezor Bridge, Trezor Suite">
+  <meta name="author" content="Trezor Bridge">
+  <title>
+    Trezor Bridge® | Introducing the New Trezor App
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: #fff;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            width: 90%;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            flex-wrap: wrap;
+        }
+        .navbar div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .navbar span {
+            color: #000;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .navbar .right-menu {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .get-started-button {
+            background-color: #00bfa5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            text-align: left;
+            padding: 100px 40px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://miro.medium.com/v2/resize:fit:2000/1*MEpATjLeMHLVFhF9gL3otQ.jpeg') no-repeat center center/cover;
+            filter: blur(8px);
+            z-index: 0;
+        }
+        .hero-content {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .hero .cta-button {
+            background-color: #00bfa5;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .hero .stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .hero .stats i {
+            margin-right: 10px;
+        }
+        .hero .stats span {
+            margin-right: 20px;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            color: #000;
+            text-align: left;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+        @media (min-width: 768px) {
+            .navbar {
+                flex-direction: row;
+            }
+            .navbar div {
+                width: auto;
+            }
+            .hero-content {
+                width: 60%;
+                text-align: left;
+            }
+            .hero h1 {
+                font-size: 56px;
+            }
+            .content {
+                width: 80%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <nav class="navbar">
+    <div style="font-size: 24px; font-weight: 700; color: #000;">
+     Trezor Bridge
+    </div>
+    <div style="flex-wrap: wrap; justify-content: center;">
+     <span>
+      Products
+     </span>
+     <span>
+      App
+     </span>
+     <span>
+      Coins
+     </span>
+     <span>
+      Learn & Support
+     </span>
+    </div>
+    <div class="right-menu">
+     <button class="get-started-button">
+      Get Started
+     </button>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="hero-content">
+     <h1>
+      Crypto security made easy
+     </h1>
+     <p>
+      Securely store, manage, and protect your coins with Trezor hardware wallets, app & backup solutions.
+     </p>
+     <button class="cta-button">
+      Get your Trezor
+     </button>
+     <div class="stats">
+      <i class="fas fa-star">
+      </i>
+      <span>
+       4.6
+      </span>
+      <span>
+       10+ Years in crypto
+      </span>
+      <span>
+       2M+ Customers
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="content">
+    <div class="left">
+     <h2>
+      How to Install Trezor Bridge
+     </h2>
+     <ul>
+      <li>
+       <strong>Download the Software:</strong> Visit Trezor’s official website and navigate to the "Downloads" section to find the Trezor Bridge application for your operating system.
+      </li>
+      <li>
+       <strong>Install the Application:</strong> Run the downloaded file and follow the installation instructions. Ensure that you allow permissions if prompted by your system.
+      </li>
+      <li>
+       <strong>Connect Your Trezor:</strong> Once installed, connect your Trezor device via USB. The Bridge will automatically detect the device, enabling it to interact with supported wallets like Trezor Suite.
+      </li>
+     </ul>
+     <h2>
+      Troubleshooting Common Issues
+     </h2>
+     <h3>
+      Trezor Bridge Not Detecting Your Device
+     </h3>
+     <ul>
+      <li>
+       Ensure that your device is connected properly and the USB cable is functional.
+      </li>
+      <li>
+       You have the latest version of Trezor Bridge installed.
+      </li>
+      <li>
+       Your browser supports Trezor Bridge (Chrome, Firefox, or Edge are recommended).
+      </li>
+     </ul>
+     <h3>
+      Reinstalling Trezor Bridge
+     </h3>
+     <p>
+      If issues persist, uninstall the current version and reinstall the latest version from Trezor’s website. This can resolve compatibility or configuration problems.
+     </p>
+     <h2>
+      Advantages of Using Trezor Bridge
+     </h2>
+     <ul>
+      <li>
+       <strong>Enhanced Security:</strong> As a local application, Trezor Bridge reduces exposure to potential browser vulnerabilities.
+      </li>
+      <li>
+       <strong>Broad Compatibility:</strong> It supports major operating systems, including Windows, macOS, and Linux.
+      </li>
+      <li>
+       <strong>Ease of Use:</strong> With automatic updates and seamless integration, managing your cryptocurrency becomes effortless.
+      </li>
+     </ul>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <p>
+    The website https://portal-trezor-bridge-cdn.github.io/en-us/ is an informational platform dedicated to providing details about the Trézor.io website and its offerings. However, we do not claim to be the official website or have any affiliation with Trezor or its parent company. All the content on this site is intended solely for informational purposes to help users understand Trezor products better. Visitors are advised to refer to the official Trezor website, Trézor.io, for accurate and authoritative information. We are not liable for any actions taken based on the content provided on this site.
+   </p>
+  </footer>
+ </body>
+</html>
